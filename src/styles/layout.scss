@@ -1,0 +1,10 @@
+@import "vars";
+
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import "header";
+@import "main";
+
+body {
+  background-color: $backgroundColor;
+}

@@ -1,0 +1,45 @@
+.header {
+
+  .logo {
+    float: left;
+    font-size: 16px;
+    height: 160px;
+
+    a {
+      @include text-hide();
+
+      margin: 35px 0;
+      background-repeat: no-repeat;
+      .svg & {
+        background-image: url(../images/ulster_logo.svg);
+        background-size: contain;
+      }
+      .no-svg & {
+        background-image: url(../images/ulster_logo.png);
+      }
+      display: block;
+      float: left;
+      width: 163px;
+      height: 90px;
+    }
+
+    span {
+      margin-left: 1em;
+      padding-left: 1em;
+      line-height: 1.5em;
+      display: block;
+      float: right;
+      border-left: 1px solid $corporateGold;
+      margin-top: 5.45em;
+      font-weight: 200;
+    }
+  }
+
+  .svg.theme-light & a {
+    background-image: url(../images/ulster_logo_lightbg.svg);
+  }
+
+  .no-svg.theme-light & a {
+    background-image: url(../images/ulster_logo_lightbg.png);
+  }
+}

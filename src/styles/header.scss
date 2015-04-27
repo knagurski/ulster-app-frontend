@@ -1,0 +1,17 @@
+.header {
+  background-color: $headerBackgroundColor;
+  color: $headerTextColor;
+  font-weight: 200;
+  margin-bottom: $standardMargin;
+  .container {
+    position: relative;
+  }
+  .theme-light & {
+    background-color: $headerBackgroundColorLight;
+    color: $headerTextColorLight;
+    margin-bottom: 0;
+  }
+}
+
+@import "header-logo";
+@import "header-app-user";

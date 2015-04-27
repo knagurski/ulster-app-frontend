@@ -1,0 +1,65 @@
+.main-sidebar {
+  z-index: 1000;
+  border-top: 5px solid darken($corporateGold, 10%);
+  background-color: $sidebarBackgroundColor;
+  box-shadow: -1px 1px 2px 0 rgba(0, 0, 0, .1);
+
+  .main-sidebar-title {
+    font-size: 28px;
+    color: $corporateGold;
+    margin-top: $standardMargin;
+    line-height: 2;
+    font-weight: 200;
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: 200;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  > ul {
+    background-color: $sidebarLinksBackgroundColor;
+    margin: 0 -15px;
+  }
+
+  li {
+    > a {
+      display: block;
+      font-size: $sidebarLinkSize;
+      border-left: 5px solid $sidebarLinksBackgroundColorDarker;
+      padding: 0 $standardMargin;
+      line-height: 3;
+
+      &:hover {
+        background-color: $sidebarLinksBackgroundColorDarker;
+        border-left-color: $sidebarLinksBackgroundColorEvenDarker;
+      }
+    }
+    > ul a {
+      padding-left: ($standardMargin * 1.5);
+    }
+
+    &.active {
+      background-color: $sidebarBackgroundColor;
+      a {
+        border-left-color: $sidebarActiveLinkBackgroundColor;
+        &:hover {
+          background-color: $sidebarActiveLinkBackgroundColorSubLinkBackgroundHover;
+          border-left-color: $sidebarActiveLinkBackgroundColorDarker;
+          color: white;
+        }
+      }
+      > a {
+        background-color: $sidebarActiveLinkBackgroundColor;
+        border-left-color: $sidebarActiveLinkBackgroundColorDarker;
+        color: white;
+      }
+    }
+  }
+}

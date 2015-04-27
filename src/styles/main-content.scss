@@ -1,0 +1,14 @@
+.main-content {
+  border-top: 5px solid $corporateGold;
+  background-color: $contentBackgroundColor;
+  padding: $standardMargin;
+
+  .main-content-title {
+    color: $corporateBlue;
+    font-weight: 400;
+    font-size: 38px;
+    margin: ($standardMargin * 1.5) 0 $standardMargin;
+  }
+}
+
+@import "main-content-footer";

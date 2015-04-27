@@ -1,0 +1,27 @@
+// colors
+$corporateGold: rgb(180, 161, 104);
+$corporateBlue: rgb(16, 43, 82);
+$backgroundColor: #F4F4F4;
+$contentBackgroundColor: white;
+$sidebarBackgroundColor: white;
+$sidebarLinksBackgroundColor: darken($backgroundColor, 3%);
+$sidebarLinksBackgroundColorDarker: darken($sidebarLinksBackgroundColor, 5%);
+$sidebarLinksBackgroundColorEvenDarker: darken($sidebarLinksBackgroundColorDarker, 5%);
+$sidebarActiveLinkBackgroundColor: rgb(86, 119, 143);
+$sidebarActiveLinkBackgroundColorDarker: darken($sidebarActiveLinkBackgroundColor, 10%);
+$sidebarActiveLinkBackgroundColorSubLinkBackgroundHover: lighten($sidebarActiveLinkBackgroundColor, 5%);
+$footerBackgroundColor: darken($backgroundColor, 3%);
+$linkColor: #243a6e;
+$headerTextColor: white;
+$headerBackgroundColor: $corporateBlue;
+$headerTextColorLight: $corporateBlue;
+$headerBackgroundColorLight: transparent;
+
+// sizes
+$standardMargin: 20px;
+$sidebarLinkSize: 16px;
+
+// override bootstrap
+$link-color: $linkColor;
+$icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+$brand-primary: $sidebarActiveLinkBackgroundColor;
